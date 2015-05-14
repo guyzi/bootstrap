@@ -206,7 +206,8 @@ angular.module('ui.bootstrap.datepicker', ['ui.bootstrap.dateparser', 'ui.bootst
       datepickerMode: '=?',
       dateDisabled: '&',
       customClass: '&',
-      shortcutPropagation: '&?'
+      shortcutPropagation: '&?',
+      onChange: '=?'
     },
     require: ['datepicker', '?^ngModel'],
     controller: 'DatepickerController',
@@ -701,6 +702,8 @@ function ($compile, $parse, $document, $position, dateFilter, dateParser, datepi
           }
         }
         scope.dateSelection( date );
+
+        if (scope.onChange) { scope.onChange(date); }
       };
 
       scope.close = function() {

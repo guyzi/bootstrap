@@ -1,0 +1,17 @@
+{
+  "name": "cp-angular-ui-bootstrap",
+  "version": "0.13.0",
+  "homepage": "https://github.com/guyzi/bootstrap",
+  "authors": [
+    "Guy Zissman <vall3y@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/bower_components",
+    "test",
+    "tests"
+  ]
+}
